@@ -145,6 +145,56 @@
       border: 1px solid #333;
     }
     
+    .contact {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+      font-family: 'Inter', sans-serif;
+      padding: 12px;
+      border: 1px solid #333;
+      background-color: #1e1e1e;
+      color: #e2e8f0;
+      border-radius: 8px;
+      outline: none;
+      font-size: 16px;
+    }
+    
+    .contact textarea {
+      resize: vertical;
+      height: 140px;
+    }
+
+    .contact input:focus,
+    .contact textarea:focus {
+      border-color: #38bdf8;
+    }
+
+    .contact button {
+      font-family: 'Inter', sans-serif;
+      padding: 12px;
+      background-color: #38bdf8;
+      color: #111111;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact button:hover {
+      background-color: #0ea5e9;
+    }
+
     footer {
       background-color: #111111;
       text-align: center;
@@ -211,6 +261,18 @@
           <div class="skill">Database</div>
           <div class="skill">C#</div>
         </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Write your message here..."></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </section>
   </main>
